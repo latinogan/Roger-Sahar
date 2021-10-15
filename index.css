@@ -1,3 +1,17 @@
 body{
 	background-image: url("https://design-style-guide.freecodecamp.org/downloads/fcc_primary_small.jpg");
 }
+#title{
+	color: white;
+	text-align: center;
+}
+#description{
+	text-align: center;
+	color: white;
+}  
+#survey-form{
+	text-align: center;
+}
+p{
+	color: white;
+}                 
