@@ -20,4 +20,19 @@ body{
 }
 p{
 	color: white;
-}                 
+}
+
+form{
+	color: white;
+}
+#submit{
+	background-color:green ;
+	width: 80%;
+	margin-top: 6px;
+}
+#comments{
+	width: 80%;
+	height: 70px;
+
+
+}

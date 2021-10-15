@@ -1,24 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="index.css">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-	<h1 id="title">freeCodeCamp Survey Form</h1>
-	<p id="description">Thank you for taking the time to help us improve the platform</p>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
 <div>
-	<form id="survey-form" action="">
-		<p>Name</p>
-		<input id="name" type="text" placeholder="Enter your name">
-		<p>Email</p>
-		<input id="email" type="text" placeholder="Enter your Email">
-		<p>Age (optional)</p>
-		<input id="name" type="text" placeholder="Age">
-		<p>Which option best describes your current role?</p>
-		<input id="name" type="text" placeholder="Select current role">
-	</form>
+    <form id="survey-form" action="">
+        <p id="name">Name</p>
+        <input id="name-label" type="text" placeholder="Enter your name" required>
+        
+        <p id="email">Email</p>
+        <input id="email-label" type="text" placeholder="Enter your Email" required>
+        
+        <p id="number">Age (optional)</p>
+        <input id="number-label" type="text" placeholder="Age">
+        
+        <p>Which option best describes your current role?</p>
+        <input type="text" placeholder="Select current role">
+        
+        <p>Would you recommend freecodecamp to a friend</p>
+        <label for="Definitely"><input id="Definitely" type="radio" name="Maybe"> Definitely</label><br>
+        <label for="Maybe"><input id="Maybe" type="radio" name="Maybe"> Maybe</label><br>
+        <label for="Not sure"><input id="Not sure" type="radio" name="Maybe"> Not sure</label>
+        
+        <p>What is your favorite feature of freeCodeCamp? </p>
+        <input type="text" placeholder="Select an option">
+
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <label for="Front-end Projects"><input id="Front-end Projects" type="checkbox" name="improvement">Front-end Projects</label><br>
+        <label for="Back-end Projects"><input id="Back-end Projects" type="checkbox" name="improvement"> Back-end Projects</label><br>
+        <label for="Data Visualization"><input id="Data Visualization" type="checkbox" name="improvement"> Data Visualization</label><br>
+        <label for="Challenges"><input id="Challenges" type="checkbox" name="improvement"> Challenges</label><br>
+        <label for="Open Source Community"><input id="Open Source Community" type="checkbox" name="improvement"> Open Source Community</label><br>
+        <label for="Gitter help rooms"><input id="Gitter help rooms" type="checkbox" name="improvement"> Gitter help rooms</label><br>
+        <label for="Videos"><input id="Videos" type="checkbox" name="improvement"> Videos</label><br>
+        <label for="City Meetups"><input id="City Meetups" type="checkbox" name="improvement"> City Meetups</label><br>
+        <label for="Wiki"><input id="Wiki" type="checkbox" name="improvement"> Wiki</label><br>
+        <label for="Forum"><input id="Forum" type="checkbox" name="improvement"> Forum</label><br>
+        <label for="Additional Courses"><input id="Additional Courses" type="checkbox" name="improvement"> Additional Courses</label>
+        <p>Any comments or suggestions?</p>
+        <input id="comments"  type="text" placeholder="Enter your comment here...">
+        <br>
+        <button id="submit" type="submit">Submit</button>
+    </form>
 </div>
 
 </body>
